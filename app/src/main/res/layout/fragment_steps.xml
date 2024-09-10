@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        >
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:backgroundTint="@color/lavender"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_450sdp"
+            />
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:visibility="invisible"
+            android:backgroundTint="@color/teal_700"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_450sdp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step Counter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:textColor="#3a9bdc"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <ProgressBar
+                android:id="@+id/progressBar" style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circular_shape"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                />
+            <!--        <com.mikhaellopez.circularprogressbar.CircularProgressBar-->
+            <!--            android:id="@+id/circularProgressBar"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:cpb_background_progressbar_color="#b6bbd8"-->
+            <!--            app:cpb_background_progressbar_width="@dimen/_20sdp"-->
+            <!--            app:cpb_progress_direction="to_right"-->
+            <!--            app:cpb_progressbar_color="#3f51b5"-->
+            <!--            app:cpb_progressbar_width="20dp"-->
+            <!--            app:cpb_round_border="false" />-->
+
+            <TextView
+                android:id="@+id/steps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_28sdp"
+                android:textColor="@color/secondary"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/goalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goal: "
+                android:textColor="@color/secondary"
+                android:layout_marginTop="@dimen/_170sdp"
+                android:layout_marginStart="@dimen/_115sdp"
+                android:textSize="@dimen/_15sdp"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
